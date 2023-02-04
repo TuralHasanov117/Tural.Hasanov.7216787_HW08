@@ -1,0 +1,15 @@
+{% extends 'app.html' %} {% block content %} {% if questions %}
+<ul>
+  {% for question in questions %}
+  <li class="question">
+    {{forloop.counter}}.
+    <a href="{% url 'polls:detail' question.id %}"
+      >{{ question.question_text }}</a
+    >
+    <span class="pub_date">{{question.pub_date}}</span>
+  </li>
+  {% endfor %}
+</ul>
+{% else %}
+<p>No polls are available.</p>
+{% endif %} {% endblock content %}

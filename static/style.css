@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+main {
+  padding: 3em;
+}
+
+.header {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  padding: 0.25em;
+  display: flex;
+  align-items: center;
+}
+
+.header .logo img {
+  width: 2em;
+  height: 2em;
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 0.5em;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 4px;
+}
+
+.header .header-right a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+footer {
+  padding: 0.3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #f1f1f1;
+  line-height: 1.3;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+
+footer p {
+  text-align: center;
+  margin: 0.5em;
+}
+
+footer img {
+  width: 3.2em;
+  height: 3.2em;
+  margin: 0.5em 2em;
+}
+
+li.question {
+  padding: 2em;
+  border: 0.1em solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 2em;
+
+  background-color: #efe;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+li.question .pub_date {
+  float: right;
+}
+
+form.question-form {
+  margin: 1em;
+}
+
+form.question-form .question-form-fieldset {
+  padding: 1em;
+  margin-bottom: 1em;
+}
+
+form.question-form .form-input {
+  margin-bottom: 1em;
+}
+
+.form-btn {
+  padding: 0.5em;
+  background: lightblue;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.6s;
+  font-size: 1em;
+}
+
+.form-btn:hover {
+  background-color: rgb(146, 187, 201);
+}
+
+ul.choices {
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+
+li.question-choice {
+  background: #dde;
+  border: none;
+  border-radius: 4px;
+  margin-bottom: 0.5em;
+  padding: 0.5em;
+}
